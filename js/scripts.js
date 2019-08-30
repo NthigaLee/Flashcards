@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $(".clickable").click(function(){
+        $(".showing-").slideToggle();
+    });
+    $(".clickablep").click(function(){
+        $(".showingp").slideToggle();
+    });
+    $(".clickableo").click(function(){
+        $(".showingo").slideToggle();
+    });
+    $(".clickablev").click(function(){
+        $(".showingv").slideToggle();
+    });
+    $(".clickableF").click(function(){
+        $(".showingF").slideToggle();
+    });
+    $(".clickablea").click(function(){
+        $(".showinga").slideToggle();
+    });
+    
+})
