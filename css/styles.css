@@ -19,3 +19,6 @@
 .well{
     cursor: pointer;
 }
+.output{
+    display: none;
+}

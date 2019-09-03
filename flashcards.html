@@ -27,7 +27,7 @@
         <div class="well">
             <div class="row">
             <div class="col-md-6">
-                <div class="clickable">
+                <div class="clickable-">
                 <h2>JavaScript(JS)</h2>
               </div>
                 <div class="showing-">
@@ -80,6 +80,7 @@
               </div>
             </div>
             </div>
+          </div>
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h3>Did you have fun?</h3>
@@ -90,16 +91,26 @@
                  </blockquote>
                  <blockquote>
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                 </blockquote>    
-
+                 </blockquote>
+                 <form id="query">
+                 <div class="form-group">
+                   <label for="email">Email: </label>
+                   <input type="text" id="email" class="form-control">
+                   <label for="comments">Submit a query: </label>
+                   <input type="text" id="comments" class="form-control">
+                  </div>  
+                  <button type="submit" class="btn">Submit</button> 
+                </form>
+                <div id="output"> </div>
                 </div>
+                
                 <div class="panel-footer">
                         <p class="text-right">From our esteemed customers.</p>
                     </div>
             </div>
         
 
-        </div>
+        
     </div>
 </body>
 </html>

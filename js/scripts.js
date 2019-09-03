@@ -1,21 +1,18 @@
 $(document).ready(function(){
-    $(".clickable").click(function(){
-        $(".showing-").slideToggle();
+ var indicators = ["-","p","o","v","F","a"];
+
+ indicators.forEach(function(indicator){
+    $(".clickable"+indicator).click(function(){
+        $(".showing"+indicator).slideToggle();
     });
-    $(".clickablep").click(function(){
-        $(".showingp").slideToggle();
-    });
-    $(".clickableo").click(function(){
-        $(".showingo").slideToggle();
-    });
-    $(".clickablev").click(function(){
-        $(".showingv").slideToggle();
-    });
-    $(".clickableF").click(function(){
-        $(".showingF").slideToggle();
-    });
-    $(".clickablea").click(function(){
-        $(".showinga").slideToggle();
-    });
-    
-})
+  });
+
+  $("form#query").submit(function(event){
+      event.preventDefault();
+      var contactEmail=$("#email").val();
+      var query = $("#comments").val();
+
+      $("#output").text("Your email is "+contactEmail+". Thank you for your input!")
+  })
+});
+
